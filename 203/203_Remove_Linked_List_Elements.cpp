@@ -35,9 +35,7 @@ public:
                 tmp = tmp->next;
             }
         }
-        ListNode* n = dummy_head;
         tmp = dummy_head->next;
-        delete n;
         return tmp;
     }
 };
