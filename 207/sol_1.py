@@ -27,7 +27,8 @@ class Solution:
             post_pres[post].add(pre)
             
         basic_courses = [i for i in range(numCourses) if not post_pres[i]]  # courses without pre-course
-        while basic_courses:
+        while basic_courses:  
+            # pop out the first element in each time, add the new basic(s) to this deque as well  
             basic = basic_courses.pop(0)
             n += 1
             for item in pre_posts[basic]:
