@@ -2,13 +2,15 @@ import collections
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         
-        # A course can be taken ifdose NOT HAVE ANY PREREQUISITE(S), such course is namely basic             # course
+        # A course can be taken ifdose NOT HAVE ANY PREREQUISITE(S), such course is namely basic             
+        # course
         
         # The idea is like we gradually clear the dependency(ies) of the node from the graph to see
         # how many of nodes without dependency (becomes basic course at the moment)
         
         # There is a need to create two mappings: 1. pre_posts mappnig  2. post_pres mapping
-        # pre_posts mappnig is used to iterate its values(posts) for each basic, find such values in         # post_pres mapping and remove the basic to see when it becomes basic
+        # pre_posts mappnig is used to iterate its values(posts) for each basic, find such values in         
+        # post_pres mapping and remove the basic to see when it becomes basic
         
         # we also count basic in the above process, finally compare n with numCourses
         
