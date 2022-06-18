@@ -3,7 +3,8 @@ class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         
         # A course can be taken ifdose NOT HAVE ANY PREREQUISITE(S), such course is namely basic             
-        # course
+        # course. Since all nodes are provided by the prerequisites pairs, thre is no sole nodes
+        # that without any post course
         
         # The idea is like we gradually clear the dependency(ies) of the node from the graph to see
         # how many of nodes without dependency (becomes basic course at the moment)
